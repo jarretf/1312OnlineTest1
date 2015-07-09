@@ -13,4 +13,12 @@ public class Candidate_button {
 		candidate.increment_poll();
 	}
 
+	public Candidate getCandidate() {
+		return candidate;
+	}
+
+	public void setCandidate(Candidate candidate) {
+		this.candidate = candidate;
+	}
+
 }

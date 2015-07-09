@@ -10,10 +10,12 @@ public class Evm {
 	
 	public Evm() 
 	{
+		candidates=set_candidate_list();
 		control_unit=new Control_unit();
 		ballot_unit=new Ballot_unit();
 		control_unit.attach(ballot_unit);
 		ballot_unit.attach(control_unit);
+		
 		polls_state=new Context_poll_state();
 	}
 	
@@ -48,10 +50,16 @@ public class Evm {
 		ballot_unit.set_ballot_slots(candidates);
 	}
 	
-	public void set_candidate_list(ArrayList<Candidate> candidates)
-	{
-		this.candidates=candidates;
-	}
 	
+	
+	public ArrayList<Candidate> set_candidate_list()
+	{
+		
+		ArrayList<Candidate> candidates=new ArrayList<Candidate>();
+		candidates.add(new Candidate("Mr.A", "Chip"));
+		candidates.add(new Candidate("Mr.B", "Mouse"));
+		candidates.add(new Candidate("Mr.C", "Screen"));
+		return candidates;
+	}
 	
 }
