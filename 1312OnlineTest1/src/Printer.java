@@ -19,4 +19,9 @@ public class Printer {
 		}
 		System.out.println();
 	}
+	
+	public static void polls_status(State state)
+	{
+		System.out.println("Elections are "+ state.name+"\n");
+	}
 }
