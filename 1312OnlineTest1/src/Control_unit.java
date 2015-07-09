@@ -22,14 +22,8 @@ public class Control_unit {
 	
 	public void generate_result()
 	{
-		System.out.println("NAME\tPARTY\tVOTES");
-		for(Candidate c: candidates)
-		{
-			System.out.println(c.getName()+"\t"+c.getParty()+"\t"+c.getPolls());
-		}
-		System.out.println();
+		Printer.print_result(candidates);
 	}
-
 	
 	
 	

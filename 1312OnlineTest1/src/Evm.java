@@ -6,6 +6,7 @@ public class Evm {
 	public Control_unit control_unit;
 	public Ballot_unit ballot_unit;
 	public ArrayList<Candidate> candidates;
+	public Context_poll_state polls_state;
 	
 	public Evm() 
 	{
